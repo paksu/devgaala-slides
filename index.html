@@ -85,6 +85,7 @@ Date:   Thu Apr 24 17:22:23 2014 +0300
                <ul>
                  <li>Upea kombinaatio</li>
                  <li>Hienoin soolo</li>
+                 <li>Ylivoimainen voittaja</li>
                </ul>
               </div>
               <div class="fragment">
@@ -97,26 +98,6 @@ Date:   Thu Apr 24 17:22:23 2014 +0300
             <script type="text/template">
                 ## 🏆 kategoria: Paras TODO-kommentti
             </script>
-        </section>
-        <section>
-          <h2>Paras TODO-kommentti: Sija 3</h2>
-              <div class="fragment">
-              <h4>Raadin perustelut</h4>
-               <p>Lisätty 2.4.2014 mutta edelleen tarpeellinen</p>
-              </div>
-              <div class="fragment">
-                <pre><code data-trim>
-class ClientSideError(models.Model):
-    """
-    Model for storing javascript errors that were logged to server.
-    """
-    url = models.CharField(max_length=1000, blank=True)
-    message = models.CharField(max_length=5000, blank=True)
-    # TODO: Delete after releasing beta
-    line = models.CharField(max_length=255, blank=True)
-</code></pre>
-                <h4>@arsihalttunen</h4>
-              </div>
         </section>
         <section>
           <h2>Paras TODO-kommentti: Sija 2</h2>
@@ -141,6 +122,26 @@ def test_reset_password_set_password_valid(self):
     # TODO WAT ?
 </code></pre>
                 <h4>@joonapääkkönen</h4>
+              </div>
+        </section>
+        <section>
+          <h2>Paras TODO-kommentti: Sija 1</h2>
+              <div class="fragment">
+              <h4>Raadin perustelut</h4>
+               <p>Lisätty 2.4.2014 mutta edelleen tarpeellinen</p>
+              </div>
+              <div class="fragment">
+                <pre><code data-trim>
+class ClientSideError(models.Model):
+    """
+    Model for storing javascript errors that were logged to server.
+    """
+    url = models.CharField(max_length=1000, blank=True)
+    message = models.CharField(max_length=5000, blank=True)
+    # TODO: Delete after releasing beta
+    line = models.CharField(max_length=255, blank=True)
+</code></pre>
+                <h4>@arsihalttunen</h4>
               </div>
         </section>
 
@@ -189,6 +190,27 @@ CUSTOMER_SPECIFIC_CELERY_TASKS = {
 }
 </code></pre>
                 <h4>@annikaoukka</h4>
+              </div>
+        </section>
+
+        <section>
+            <h2>🏆 kategoria: Hassuin bugi</h2>
+        </section>
+        <section>
+          <h2>Hassuimmat bugit</h2>
+              <div class="fragment">
+              <p>Mobiiliappin alkuversio, joka jätti käyttäjät ikuisesti online-tilaan consolissa. Siellä taitaa olla vieläkin koko Hogwarts, Ville ja Ari onlinessa aina.</p>
+              </div>
+              <div class="fragment">
+              <hr>
+              <p>Se kerta kun dossattiin If.fi:n soittojärjestelmä pommittamalla liidit uudelleen, jos lähetys feilasi.
+Lähettettiin sitten aika pirun monta kertaa sama liidi putkeen, koska vastaanottajapää ei osannut vastata 200 OK.</p>
+              </div>
+        </section>
+        <section>
+          <h2>Hassuimmat bugit</h2>
+              <div>
+              <p>Vainio teki pienen laskuvirheen pankissa Critsendin eduksi ja plussasi päivämäärään kylmänviileesti +1. Tämä toimi kuun alusta hienosti kunnes kuun lopussa hyppäs väärälle kymmenelle ja pamautti 40 000 error mailia kaikkien sähköpostiin. Ei muuten paha mutta minun N9 joka synkkas automaattisesti mailit jumahti kun levytila loppu. En saanut enää ikinä sitä sähköposti appsia toimimaan sen jälkeen.</p>
               </div>
         </section>
 			</div>
