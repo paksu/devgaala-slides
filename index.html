@@ -330,18 +330,51 @@ Lähettettiin sitten aika pirun monta kertaa sama liidi putkeen, koska vastaanot
               <p>Vainio teki pienen laskuvirheen pankissa Critsendin eduksi ja plussasi päivämäärään kylmänviileesti +1. Tämä toimi kuun alusta hienosti kunnes kuun lopussa hyppäs väärälle kymmenelle ja pamautti 40 000 error mailia kaikkien sähköpostiin. Ei muuten paha mutta minun N9 joka synkkas automaattisesti mailit jumahti kun levytila loppu. En saanut enää ikinä sitä sähköposti appsia toimimaan sen jälkeen.</p>
               </div>
         </section>
-			</div>
-		</div>
+        <section>
+          <h2>Hassuimmat bugit</h2>
+              <p>Consolen uudistetulle audio playerille annetaan volumen arvoja nollasta yhteen. Mikko oli laittanut tietokantaan itselleen volumeksi 10000 ja mennyt sitten Consoleen kuulokkeet päässä. Ei oo enää vaikkua korvissa!</p>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section>
+            <h2>🏆 Oikeesti hienoja juttuja</h2>
+        </section>
+        <section>
+          <h2>🏆 Oikeesti hienoja juttuja</h2>
+              <div class="fragment">
+              <h4>Green/Blue Deployment</h4>
+              <p>Workflow ennen blue/green -deploymenttiä ja zero downtime deploymenttejä:</p>
+              <small><ol class="fragment">
+                <li>Lyödään koodi tuotantokoneille klo 23 jälkeen</li>
+                <li>Otetaan muutama 500 virherequesti ja käyttökätko ennenkuin ehditään ajamaan migraatiot</li>
+                <li>Ajetaan migraatiot</li>
+                <li>Rukoillaan</li>
+                <li>Koodi toimii tai ei toimi mutta helppo rollback ei ole vaihtoehto</li>
+                <li>Lopuksi vastaanotetaan hieman vittuilua pornochattaajilta joiden primetimeä on YÖ</li>
+            </ol></small>
+              </div>
+        </section>
+        <section>
+          <h2>🏆 Oikeesti hienoja juttuja</h2>
+              <div class="fragment">
+              <p>Ovela (sekä nippanappa laillinen ja jatkuvia ongelmia aiheuttava ) jako giosgin dataan ja asiakkaan dataan. Tätä kun esiteltiin niin lakimiehetkin oli ihan amazed.</p>
+              </div>
+              <div class="fragment">
+              <hr>
+              <p>Tietotaito jolla ollaan jatkuvasti uudistettu infraa ja arkkitehtuuria parempaan suuntaan SÄILYTTÄEN taaksepäin yhteensopivuus. Parhaassa tapauksessa asiakkaat eivät huomaa mitään.</p>
+              </div>
+        </section>
+            </div>
+        </div>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
