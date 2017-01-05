@@ -20,6 +20,11 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+        <style type="text/css">
+            .sceduled mark span {
+                color: #440;
+            }
+        </style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -172,7 +177,7 @@ Date:   Wed Aug 19 12:53:53 2015 +0300
               <p>Klassikko, joka vain leviää</p>
               </div>
               <div class="fragment">
-                <pre><code data-trim data-noescape>
+                <pre><code data-trim data-noescape class="sceduled">
 CUSTOMER_SPECIFIC_CELERY_TASKS = {
     'management.<mark>sceduled</mark>_reports_weekly_op': {
         'task': 'giosgchat.modules.management.tasks.<mark>sceduled</mark>_reports.weekly_stats_op',
@@ -188,13 +193,67 @@ CUSTOMER_SPECIFIC_CELERY_TASKS = {
     },
     # ...
 }
-</code></pre>
+                </code></pre>
                 <h4>@annikaoukka</h4>
               </div>
         </section>
 
         <section>
-            <h2>🏆 kategoria: Hassuin bugi</h2>
+            <h2>🏆 kategoria: Eniten "Oops" -commit-viestejä</h2>
+        </section>
+        <section>
+          <h2>Eniten "Oops" -commit-viestejä: Sija 3</h2>
+              <div class="fragment">
+                <pre><code data-trim data-noescape>
+Jenni Pajukoski (3):
+      Whooops
+      oops
+      oops
+                </code></pre>
+                <h4>@jennipajukoski</h4>
+              </div>
+        </section>
+        <section>
+          <h2>Eniten "Oops" -commit-viestejä: Sija 2</h2>
+              <div class="fragment">
+                <pre><code data-trim data-noescape>
+Arsi Halttunen (9):
+      Oops.
+      oops..
+      Oops.. Fixed to allow ie8
+      Oops..
+      Oops
+      Oops
+      Oops.
+      Oops.     \n[domain_settings]
+      Oops     [feature_firstline_localisation]
+                </code></pre>
+                <h4>@arsihalttunen</h4>
+              </div>
+        </section>
+        <section>
+          <h2>🏆 Eniten "Oops" -commit-viestejä: Sija 1</h2>
+              <div class="fragment">
+                <pre><code data-trim data-noescape>
+Joona Pääkkönen (11):
+      Whoops! Critical typo
+      Oops. Missing RoomService in NotificationController
+      Whoops! Dont log chatstate
+      Whoops, tooltip $destroy was calling global close().. Renamed it. Exposed tooltip element in order to clean up the tooltip properly.
+      Whoops, tooltip $destroy was calling global close().. Renamed it. Exposed tooltip element in order to clean up the tooltip properly.
+      Whoops. Fixed some typos
+      whoops. visitor api details tests were not compatible with new socket stuff
+      Whoops use difference instead of without
+      Whoops. Removed insert track data to Kafka by accident
+      Oops forgot to add the actual json3.js completely
+      Whoops removed the last traces of embedded ui-toolkit
+                </code></pre>
+                <h4>@joonapääkkönen</h4>
+              </div>
+        </section>
+
+        <section>
+            <h2>Hassuimmat bugit</h2>
         </section>
         <section>
           <h2>Hassuimmat bugit</h2>
