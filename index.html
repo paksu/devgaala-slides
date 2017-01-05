@@ -272,6 +272,45 @@ Joona Pääkkönen (11):
         </section>
 
         <section>
+            <h2>🏆 "Parhaat" suunnitteluratkaisut</h2>
+        </section>
+        <section>
+          <h2>🏆 "Parhaat" suunnitteluratkaisut</h2>
+              <div class="fragment">
+              <p>"Features" &amp; "product subscription"</p>
+              </div>
+              <div class="fragment">
+              <hr>
+                <p>GiosgID<br><small>(gid, cid, sgid, signed cid, signed gid, chatter ID, signed chatter ID, &hellip;)</small></p>
+                <pre><code data-trim data-noescape>
+giosgid_obj = TupleId(
+    (StrContainer('v'), HexBinaryContainer(visitor_cid)),
+    settings.SECRET_KEY
+)
+signed_cid = giosgid_obj.get_base32()
+                </code></pre>
+
+              </div>
+        </section>
+        <section>
+          <h2>🏆 "Parhaat" suunnitteluratkaisut</h2>
+                <p>Vierailijoiden priorisointialgoritmi</p>
+                <pre><code data-trim data-noescape>
+class VisitorPriorityView(AjaxView):
+    """
+    Returns the priority for a visitor.
+    """
+    def get_context_data(self, **kwargs):
+        payload = {
+            'success': True,
+            'message': 'Success',
+            'data': {'priority': random.randint(40, 70)}
+        }
+        return payload
+                </code></pre>
+        </section>
+
+        <section>
             <h2>Hassuimmat bugit</h2>
         </section>
         <section>
