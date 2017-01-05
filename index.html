@@ -311,6 +311,15 @@ Lähettettiin sitten aika pirun monta kertaa sama liidi putkeen, koska vastaanot
           <h2>Hassuimmat bugit</h2>
               <p>Consolen uudistetulle audio playerille annetaan volumen arvoja nollasta yhteen. Mikko oli laittanut tietokantaan itselleen volumeksi 10000 ja mennyt sitten Consoleen kuulokkeet päässä. Ei oo enää vaikkua korvissa!</p>
         </section>
+        <section>
+          <h2>Hassuimmat bugit</h2>
+              <div>
+              <p>Otettiin vähän apua Djangon käännöstyökaluilta ja huippukätevältä <b style="color: #fff">fuzzy</b>-asetukselta.</p>
+              <div class="fragment">
+                Lopputuloksena oli mahtava <b style="color: #fff">POISTA TIIMI</b> -teksti vaikka kuinka monessa käännöksessä.
+              </div>
+              </div>
+        </section>
 
         <section>
             <h2>🏆 "Parhaat" suunnitteluratkaisut</h2>
@@ -318,11 +327,12 @@ Lähettettiin sitten aika pirun monta kertaa sama liidi putkeen, koska vastaanot
         <section>
           <h2>🏆 "Parhaat" suunnitteluratkaisut</h2>
               <div class="fragment">
-              <p>"Features" &amp; "product subscription"</p>
+              <h4>"Features" &amp; "product subscription"</h4>
+              <span>Eli maailman monimutkaisin tapa asettaa voimassaoloaika asiakkaan tiliin</span>
               </div>
               <div class="fragment">
               <hr>
-                <p>GiosgID<br><small>(gid, cid, sgid, signed cid, signed gid, chatter ID, signed chatter ID, &hellip;)</small></p>
+                <h4>GiosgID</h4><small>(gid, cid, sgid, signed cid, signed gid, chatter ID, signed chatter ID, &hellip;)</small></p>
                 <pre><code data-trim data-noescape>
 giosgid_obj = TupleId(
     (StrContainer('v'), HexBinaryContainer(visitor_cid)),
@@ -330,12 +340,13 @@ giosgid_obj = TupleId(
 )
 signed_cid = giosgid_obj.get_base32()
                 </code></pre>
+                <p>Siitä vaan purkamaan</p>
 
               </div>
         </section>
         <section>
           <h2>🏆 "Parhaat" suunnitteluratkaisut</h2>
-                <p>Vierailijoiden priorisointialgoritmi</p>
+                <h4>Optimoitu vierailijoiden priorisointialgoritmi</h4>
                 <pre><code data-trim data-noescape>
 class VisitorPriorityView(AjaxView):
     """
@@ -349,6 +360,12 @@ class VisitorPriorityView(AjaxView):
         }
         return payload
                 </code></pre>
+        </section>
+
+        <section>
+          <h2>🏆 "Parhaat" suunnitteluratkaisut</h2>
+          <h4>Rooms</h4>
+          <p>Kukaan ei tiedä miten se toimii ja mitä sillä voi tehdä tai ei voi tehdä.</p>
         </section>
 
         <section>
@@ -372,14 +389,28 @@ class VisitorPriorityView(AjaxView):
         <section>
           <h2>🏆 Oikeesti hienoja juttuja</h2>
               <div class="fragment">
-              <p>Ovela (sekä nippanappa laillinen ja jatkuvia ongelmia aiheuttava ) jako giosgin dataan ja asiakkaan dataan. Tätä kun esiteltiin niin lakimiehetkin oli ihan amazed.</p>
-              </div>
-              <div class="fragment">
-              <hr>
-              <p>Tietotaito jolla ollaan jatkuvasti uudistettu infraa ja arkkitehtuuria parempaan suuntaan SÄILYTTÄEN taaksepäin yhteensopivuus. Parhaassa tapauksessa asiakkaat eivät huomaa mitään.</p>
+              <p>"Ovela" (sekä nippanappa laillinen ja jatkuvia ongelmia aiheuttava ) jako giosgin dataan ja asiakkaan dataan. Tätä kun esiteltiin niin lakimiehetkin oli ihan amazed.</p>
               </div>
         </section>
-            </div>
+        <section>
+          <h2>🏆 Oikeesti hienoja juttuja</h2>
+          <div class="fragment">
+          <ul>
+            <li>Se, että ollaan korjattu aika hiton monta pieleen mennyttä asiaa paremmaksi</li>
+            <li>ja uudistettu vaikka mitä arkkitehtuuria</li>
+            <li>ja samaan aikaan softa on ollut tuotannossa eikä loppukäyttäjä ole välttämättä huomannut mitään</li>
+          </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>🏆 Oikeesti hienoja juttuja</h2>
+          <div class="fragment">
+          <p>GiosgSDK</p>
+          <p>Eli ehkä viimeinkin ollaan opittu tekemään reaaliaikasoftia oikein</p>
+          </div>
+        </section>
+        </div>
         </div>
 
         <script src="lib/js/head.min.js"></script>
